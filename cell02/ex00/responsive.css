@@ -1,0 +1,29 @@
+/* Reset default margins and make the page take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+/* Make the table stretch to cover the entire page */
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+/* Split the cells equally */
+td {
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cell-left {
+    background-color: #b5c777;
+}
+
+.cell-right {
+    background-color: #f5bba3;
+}

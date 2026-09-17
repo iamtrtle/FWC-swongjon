@@ -1,0 +1,31 @@
+/* จัดให้อยู่กึ่งกลางหน้าจอและอ่านง่าย */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* จัดระยะห่างของช่องกรอกข้อมูลและปุ่ม */
+input[type="text"], select, input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ตกแต่งปุ่มกดให้ดูมีมิติเล็กน้อย */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

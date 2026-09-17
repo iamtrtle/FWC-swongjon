@@ -1,0 +1,54 @@
+/* Reset default margins and set full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- THE PARALLAX MAGIC --- */
+.parallax {
+    height: 100%; /* Makes the image take up the full screen height */
+    
+    /* CSS properties for the parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Flexbox to center the text perfectly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background images (using random placeholders) */
+.bg-image-1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0YnqLBASGCyBIuVZ0lEncxgOs5QcJ9ziMcDIu-igwg&s=10');
+}
+
+.bg-image-2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR07_lAhMkFv-YL2hfwdnUlU7GKCok3o1ocieFK1c-QpA&s=10');
+}
+
+/* --- THE BLACK BLOCK --- */
+.black-block {
+    height: 400px; /* Gives the block enough height to scroll past */
+    background-color: black;
+    color: white;
+    
+    /* Center the text inside the block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Text message styling */
+.message {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}

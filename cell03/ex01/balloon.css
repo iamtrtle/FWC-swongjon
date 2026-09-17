@@ -1,0 +1,17 @@
+/* Center the balloon on the screen to make it easy to interact with */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Initial setup for the balloon based on the instructions */
+#balloon {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%; /* This turns the square div into a perfect circle */
+    cursor: pointer;
+}
