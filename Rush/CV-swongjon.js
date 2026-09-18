@@ -1,4 +1,3 @@
-// รอให้หน้าเว็บโหลดเสร็จก่อน
 document.addEventListener('DOMContentLoaded', function() {
     
     const textArray = [
