@@ -1,0 +1,107 @@
+:root {
+    --bg-dark: #0f172a;      
+    --bg-darker: #0b1120;     
+    --riize-orange: #FF5A00;  
+    --neon-blue: #00F0FF;     
+    --text-main: #f8fafc;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/1200x/30/da/29/30da29935c4033ec31c5a4c4b74db05f.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-color: rgba(15, 23, 42, 0.85);
+    background-blend-mode: overlay;
+
+    color: var(--text-main);
+    font-family: 'Chakra Petch', sans-serif;
+    padding-top: 70px;
+}
+
+.text-orange { color: var(--riize-orange) !important; }
+.text-blue { color: var(--neon-blue) !important; }
+.bg-darker { 
+    background-color: rgba(11, 17, 32, 0.6) !important; 
+}
+
+.custom-nav {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 90, 0, 0.3);
+}
+
+.custom-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.custom-nav .nav-link:hover, 
+.custom-nav .nav-link.active {
+    color: var(--riize-orange) !important;
+}
+
+.hero-section {
+    height: 80vh;
+    background-color: transparent; 
+    border-bottom: 2px solid var(--neon-blue);
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--riize-orange);
+    box-shadow: 0 0 25px rgba(255, 90, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 240, 255, 0.6);
+}
+
+.skill-card {
+    background-color: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--riize-orange);
+    box-shadow: 0 10px 20px rgba(255, 90, 0, 0.2);
+}
+
+.btn-neon {
+    background-color: transparent;
+    color: var(--riize-orange);
+    border: 2px solid var(--riize-orange);
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background-color: var(--riize-orange);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--riize-orange);
+}
+
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 5px solid var(--neon-blue);
+    padding-left: 15px;
+    display: inline-block;
+}

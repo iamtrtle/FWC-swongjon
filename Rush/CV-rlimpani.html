@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rlimpani | Portfolio</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font: Chakra Petch -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CV-rlimpani.css">
+    
+    <style>
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+        }
+        .gallery-cap {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #cbd5e1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+
+    <!-- Navigation Bar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-blue" href="index.html">rlimpani.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activity">Activity</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-blue">Toooooooon</span></h1>
+            <h3 class="text-light">Digital Technology and Integrated Innovation Student</h3>
+            <div class="mt-4">
+                <a class="btn btn-neon mx-2" href="#activity">Activity</a>
+                <a class="btn btn-neon mx-2" href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center mt-5">
+            <h2 class="section-title mb-5">Profile</h2>
+            <div class="row justify-content-center align-items-center">
+                <!-- Profile Picture -->
+                <div class="col-md-4 mb-4">
+                    <img src="https://media.discordapp.net/attachments/1457063354483867792/1550195936687300608/IMG_0143.jpg?ex=6aad73f8&is=6aac2278&hm=8cbd151bc0262fb9aa845cc8bfc371eaa7936f31dac8af3af08d9cbff7ed0b25&=&format=webp&width=1536&height=1536" alt="rlimpani Portrait" class="profile-img shadow-neon" style="border-color: var(--neon-blue);">
+                </div>
+                <!-- Personal Information -->
+                <div class="col-md-6 text-start">
+                    <div class="card skill-card p-4">
+                        <h4 class="text-orange fw-bold mb-3">Ramon Limpanichpuckdee (Toon)</h4>
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2"><strong class="text-blue">University:</strong> King Mongkut's Institute of Technology Ladkrabang</li>
+                            <li class="mb-2"><strong class="text-blue">Major:</strong> Digital Technology and Integrated Innovation</li>
+                            <li class="mb-2"><strong class="text-blue">Email:</strong> 67051298@kmitl.ac.th</li>
+                        </ul>
+                        <hr class="border-secondary">
+                        <h5 class="fw-bold mt-3">Hobbies / Interests</h5>
+                        <div class="d-flex flex-wrap gap-2 mt-2">
+                            <span class="badge bg-dark border border-primary p-2">🎮 Games</span>
+                            <span class="badge bg-dark border border-primary p-2">🎨 Art</span>
+                            <span class="badge bg-dark border border-primary p-2">🎵 Listening to Music 24/7 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Section (Gallery) -->
+    <section id="activity" class="py-5 bg-darker">
+        <div class="container mt-4">
+            <h2 class="section-title text-center mb-5">Activities </h2>
+            
+            <div class="row g-4">
+                <!-- Pic 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://media.discordapp.net/attachments/1457063354483867792/1550199094834757664/IMG_8511.jpg?ex=6aad76e9&is=6aac2569&hm=61a12f216430c1d5423c29777fdaa5fcbef4c60655532d47437b9da7da251b9e&=&format=webp" alt="Work Tech 2026" class="gallery-img">
+                </div>
+                <!-- Pic 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://media.discordapp.net/attachments/1457063354483867792/1550199095577280512/IMG_8473.jpg?ex=6aad76e9&is=6aac2569&hm=e5124380b598a3753e37d87692f231cc8dd8ac39ca9130340e60bb3487d81306&=&format=webp&width=1151&height=1536" alt="Work Tech 2026" class="gallery-img">
+                    <div class="gallery-cap">Student Staff – King Mongkut's Hospital</div>
+                </div>
+                <!-- Pic 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://media.discordapp.net/attachments/1457063354483867792/1550199095954645072/IMG_8536.jpg?ex=6aad76e9&is=6aac2569&hm=cd403b3d661638d5ccb43d094f26c56b646e4fe261ec5e99d3ffce076d311f98&=&format=webp&width=2048&height=1536" alt="Work Tech 2026" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container mt-4 mb-5">
+            <h2 class="section-title mb-5">Connect with me</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="https://github.com/1298Ramon/FWC_rlimpani" target="_blank" class="btn btn-neon">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
